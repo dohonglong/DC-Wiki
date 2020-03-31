@@ -7,140 +7,44 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="feature/carousel.html">
 </head>
 <body>
     <!-- Carousel -->
     <div id="carousel"></div>
 
     <!-- Main body -->
-    <div class="container-fluid">
-        <h1 class="title">Justice League</h1>
-        <div id="BtnContainer" style="text-align: center">
-            <button type="button" class="btn btn-outline-primary btn-lg filter-btn active" data-filter="all">All</button>
-            <button type="button" class="btn btn-outline-primary btn-lg filter-btn" data-filter="justice_league">Justice League</button>
-            <button type="button" class="btn btn-outline-primary btn-lg filter-btn" data-filter="titans">Titans</button>
-            <button type="button" class="btn btn-outline-primary btn-lg filter-btn" data-filter="suicide_squad">Suicide Squad</button>
-            <button type="button" class="btn btn-outline-primary btn-lg filter-btn" data-filter="others">Others</button>
-        </div>
-
-        <div class="row">
-            <div class="col-md filter justice_league">
-                <div class="card">
-                    <img class="card-img-top" src="images/character/superman.jpg" height="270">
-                    <div class="card-body">
-                        <h3 class="card-title"><b>Superman</b></h3>
-                        <button type="button" class="btn btn-link" style="float: right">See more ></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md filter justice_league">
-                <div class="card">
-                    <img class="card-img-top" src="images/character/batman.jpg" height="270">
-                    <div class="card-body">
-                        <h3 class="card-title"><b>Batman</b></h3>
-                        <button type="button" class="btn btn-link" style="float: right">See more ></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md filter justice_league">
-                <div class="card">
-                    <img class="card-img-top" src="images/character/wonderwoman.jpg" height="270">
-                    <div class="card-body">
-                        <h3 class="card-title"><b>Wonder Woman</b></h3>
-                        <button type="button" class="btn btn-link" style="float: right">See more ></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md filter titans">
-                <div class="card">
-                    <img class="card-img-top" src="images/character/nightwing.jpg" height="270">
-                    <div class="card-body">
-                        <h3 class="card-title"><b>Nightwing</b></h3>
-                        <button type="button" class="btn btn-link" style="float: right">See more ></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md filter justice_league">
-                <div class="card">
-                    <img class="card-img-top" src="images/character/flash.jpg" height="270">
-                    <div class="card-body">
-                        <h3 class="card-title"><b>Flash</b></h3>
-                        <button type="button" class="btn btn-link" style="float: right">See more ></button>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="col-md filter justice_league">
-                <div class="card">
-                    <img class="card-img-top" src="images/character/greenlantern.jpg" height="270">
-                    <div class="card-body">
-                        <h3 class="card-title"><b>Green Lantern</b></h3>
-                        <button type="button" class="btn btn-link" style="float: right">See more ></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md filter titans">
-                <div class="card">
-                    <img class="card-img-top" src="images/character/flash_wally.jpg" height="270">
-                    <div class="card-body">
-                        <h3 class="card-title"><b>Flash</b></h3>
-                        <button type="button" class="btn btn-link" style="float: right">See more ></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md filter justice_league">
-                <div class="card">
-                    <img class="card-img-top" src="images/character/aquaman.jpg" height="270">
-                    <div class="card-body">
-                        <h3 class="card-title"><b>Aquaman</b></h3>
-                        <button type="button" class="btn btn-link" style="float: right">See more ></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md filter suicide_squad">
-                <div class="card">
-                    <img class="card-img-top" src="images/character/harleyquinn.jpg" height="270">
-                    <div class="card-body">
-                        <h3 class="card-title"><b>Harley Quinn</b></h3>
-                        <button type="button" class="btn btn-link" style="float: right">See more ></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md filter others">
-                <div class="card">
-                    <img class="card-img-top" src="images/character/deathstroke.jpg" height="270">
-                    <div class="card-body">
-                        <h3 class="card-title"><b>Deathstroke</b></h3>
-                        <button type="button" class="btn btn-link" style="float: right">See more ></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md filter suicide_squad">
-                <div class="card">
-                    <img class="card-img-top" src="images/character/deadshot.jpg" height="270">
-                    <div class="card-body">
-                        <h3 class="card-title"><b>Deadshot</b></h3>
-                        <button type="button" class="btn btn-link" style="float: right">See more ></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="main" id="justiceleague_main"></div>
 
 </body>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
+
 <script>
-    $('#carousel').load("carousel.html");
+    $('#carousel').load("feature/carousel.html");
+
+    $('#justiceleague_main').load("team/justiceleague.html");
+
+    $(document).ready(function(){
+        $("#justiceleague").click(function(){
+            $(".main").attr('id','justiceleague_main');
+            $('#justiceleague_main').load("team/justiceleague.html");
+        });
+
+        $("#titans").click(function(){
+            $(".main").attr('id','titans_main');
+            $('#titans_main').load("team/titans.html");
+        });
+
+        $("#suicidesquad").click(function(){
+            $(".main").attr('id','suicidesquad_main');
+            $('#suicidesquad_main').load("team/suicidesquad.html");
+        });
+
+        $("#greenlanterncorps").click(function(){
+            $(".main").attr('id','greenlanterncorps_main');
+            $('#greenlanterncorps_main').load("team/greenlanterncorps.html");
+        });
+    });
 </script>
-</html>
+</html> 
