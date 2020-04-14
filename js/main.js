@@ -25,4 +25,10 @@ $(document).ready(function(){
             this.className += " active";
         });
     }
+    
+    //Modal
+    $('.img-modal').on('click', function(e){
+        e.preventDefault(); //prevent going directly to the page by href attribute
+        $('#myModal').modal('show').find('.modal-content').load($(this).attr('href')); //load page into modal-content
+    });
 });

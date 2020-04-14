@@ -40,7 +40,45 @@
 .card-body {
     padding: 10px;
 }
+.img-modal, .img-modal:hover {
+    color: black;
+    text-decoration: none !important;
+}
 .card-title {
     text-align: center;
     font-family: Georgia, serif;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+/* Gallery */
+.card-img-top {
+    cursor: pointer;
+}
+/* Modal */
+.modal.show {
+    display: block !important;
+    padding: 0 !important;
+}
+.modal-title {
+    padding-left: 10px;
+    font-family: 'Lucida Sans', sans-serif;
+}
+.img-fluid {
+    display: block;
+    width: auto;
+    max-height: 330px;
+}
+.table td, .table th {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+}
+.table th {
+    width: 35%;
+    background-color: #b4b8b5;
+}
+thead .table-head {
+    font-size: 20px;
+    text-align: center;
+    background-color: #18c956;
 }
