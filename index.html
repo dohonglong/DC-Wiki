@@ -1,58 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>DC Database</title>
+    <title>DC Essential Reading</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/font-awesome/font-awesome.min.css">
-    <link rel="stylesheet" href="feature/carousel.html">
+    <link rel="stylesheet" href="css/gallery.css">
+
 </head>
+
 <body>
-    <!-- Carousel -->
-    <div id="carousel"></div>
+    <header></header>
 
-    <!-- Main body -->
-    <div class="main" id="justiceleague_main"></div>
-
-     <!-- Modal -->
-    <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-            </div>
+    <div class="tab-content">
+        <div class="tab-pane active" id="characters">
+            <div id="characters_main"></div>
         </div>
-    </div>
-
+        <div class="tab-pane fade" id="teams">
+            <div id="teams_main"></div>
+        </div>
+    </div>    
 </body>
+
+
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-
+<script src="js/main.js"></script>
 <script>
-    $('#carousel').load("feature/carousel.html");
-
-    $('#justiceleague_main').load("team/justiceleague.html");
-
-    $(document).ready(function(){
-        $("#justiceleague").click(function(){
-            $(".main").attr('id','justiceleague_main');
-            $('#justiceleague_main').load("team/justiceleague.html");
-        });
-
-        $("#titans").click(function(){
-            $(".main").attr('id','titans_main');
-            $('#titans_main').load("team/titans.html");
-        });
-
-        $("#suicidesquad").click(function(){
-            $(".main").attr('id','suicidesquad_main');
-            $('#suicidesquad_main').load("team/suicidesquad.html");
-        });
-
-        $("#greenlanterncorps").click(function(){
-            $(".main").attr('id','greenlanterncorps_main');
-            $('#greenlanterncorps_main').load("team/greenlanterncorps.html");
-        });
-    });
+    $('header').load("feature/header_home.html");
+    $('#characters_main').load("tabs/characters.html");
+    $('#teams_main').load("tabs/teams.html");
 </script>
 </html> 

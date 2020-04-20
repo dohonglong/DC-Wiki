@@ -1,0 +1,48 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-secondary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">DC Essential Reading</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="nav nav-pills ml-auto" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active text-uppercase" data-toggle="pill" href="#characters">Characters</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" data-toggle="pill" href="#teams">Teams</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>   
+<div class="container-fluid background">
+    <h1 class="title">DC Essential Reading</h1>
+    <div class="container d-flex justify-content-center">
+        <div class="search_bar col-lg-7">
+            <form action="">
+                <div class="input-group">
+                    <input class="form-control" id="myInput" type="text" placeholder="Search here...">
+                    <span class="input-group-append">
+                        <button id="searchbutton" type="submit" class="btn btn-primary search">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </span>         
+                </div>
+            </form> 
+        </div>
+    </div>
+</div>
+<script>
+    $("#myInput").keyup(function() {
+        var val = $.trim(this.value);
+        if (val === "")
+            $('.images').show();
+        else {
+            $('.images').hide();
+            val = val.split(" ").join("");
+            $("div[id*=" + val + " i]").show();
+        }   
+    });
+</script>
