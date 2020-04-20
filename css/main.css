@@ -1,59 +1,84 @@
-/* Header */
-header {
-    background-image: url('../images/wallpaper.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.carousel-item img {
+    width: 100%;
+    height: 100%;
 }
-/* Navigation bar */
-.navbar {
-    padding: 0;
+.carousel-caption h1 {
+    font-size: 6.5vw;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    cursor: pointer;
 }
-.navbar-brand {
-    font-family: Verdana, sans-serif;
-    font-size: 22px;
-    letter-spacing: 1px;
-}
-.nav-pills .nav-link {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    font-size: 18px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    color: white !important;
-}
-.nav-pills .nav-link.active{
-    background-color: black;
-    border: 1px solid black;
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+    height: 55px;
+    width: 55px;
+    outline: black;
 }
 
-/* Background + Title */
-.background {
-    padding: 250px 0 50px 0;
-}
 .container-fluid {
     width: 90%;
 }
 .title {
-    font-size: 7vw;
+    font-size: 5vw;
     text-align: center;
+    padding: 30px;
+}
+.col-md {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Button */
+.btn {
+    font-family: Georgia, serif;
+}
+/* Card */
+.card {
+    width: 270px;
+}
+.card-body {
     padding: 10px;
-    color: white;
 }
-
-/* Search */
-.form-control {
-    border-radius: 100px;
-    padding: 40px 30px;
+.img-modal, .img-modal:hover {
+    color: black;
+    text-decoration: none !important;
 }
-.form-control:focus {
-    box-shadow: none;
+.card-title {
+    text-align: center;
+    font-family: Georgia, serif;
+    margin-bottom: 0;
+    cursor: pointer;
 }
-.form-control::placeholder {
-    font-size: 1.25rem;
-    color: #aaa;
-    font-style: italic;
+/* Gallery */
+.card-img-top {
+    cursor: pointer;
 }
-button.search {
-    border-radius: 100px;
-    padding: 0 30px;
+/* Modal */
+.modal.show {
+    display: block !important;
+    padding: 0 !important;
+}
+.modal-title {
+    padding-left: 10px;
+    font-family: 'Lucida Sans', sans-serif;
+}
+.img-fluid {
+    display: block;
+    width: auto;
+    max-height: 330px;
+}
+.table td, .table th {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+}
+.table th {
+    width: 35%;
+    background-color: #b4b8b5;
+}
+thead .table-head {
+    font-size: 20px;
+    text-align: center;
+    background-color: #18c956;
 }
